@@ -109,7 +109,8 @@ vendor.display.rotator_downscale=1 \
 vendor.display.perf_hint_window=50 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
-debug.hwui.use_buffer_age=false
+debug.hwui.use_buffer_age=false \
+vendor.video.disable.ubwc=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -163,9 +164,9 @@ ro.vendor.qti.core_ctl_max_cpu=4
 
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.use_data_netmgrd=true \
+ro.vendor.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true \
-persist.data.mode=concurrent
+persist.vendor.data.mode=concurrent
 
 # Nitz
 PRODUCT_PROPERTY_OVERRIDES += \
