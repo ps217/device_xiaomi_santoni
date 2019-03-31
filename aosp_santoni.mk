@@ -21,6 +21,7 @@ $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
 # Inherit some common AEX stuff.
 $(call inherit-product, vendor/aosp/common.mk)
+
 TARGET_BOOT_ANIMATION_RES := 720
 EXTENDED_BUILD_TYPE := OFFICIAL
 
@@ -40,3 +41,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="HarukeyUA"
 
 BUILD_FINGERPRINT := "Xiaomi/santoni/santoni:7.1.2/N2G47H/V9.5.10.0.NAMMIFD:user/release-keys"
+
+# Use Gapps
+TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
