@@ -12,6 +12,7 @@ persist.vendor.audio.fluence.speaker=true \
 persist.vendor.audio.speaker.prot.enable=false \
 persist.vendor.audio.hw.binder.size_kbyte=1024 \
 ro.vendor.audio.sdk.ssr=false \
+ro.config.vc_call_vol_steps=7 \
 vendor.audio.dolby.ds2.enabled=true \
 vendor.audio.dolby.ds2.hardbypass=true \
 vendor.audio.flac.sw.decoder.24bit=true \
