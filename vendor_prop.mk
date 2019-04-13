@@ -13,6 +13,7 @@ persist.vendor.audio.speaker.prot.enable=false \
 persist.vendor.audio.hw.binder.size_kbyte=1024 \
 ro.af.client_heap_size_kbyte=7168 \
 ro.vendor.audio.sdk.ssr=false \
+ro.config.vc_call_vol_steps=7 \
 vendor.audio.dolby.ds2.enabled=true \
 vendor.audio.dolby.ds2.hardbypass=true \
 vendor.audio.flac.sw.decoder.24bit=true \
