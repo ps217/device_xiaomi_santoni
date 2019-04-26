@@ -19,18 +19,17 @@ TARGET_SCREEN_WIDTH := 720
 
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
-# Inherit some common Bootleggers stuff.
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/aosp/common.mk)
+TARGET_BOOT_ANIMATION_RES := 720
+EXTENDED_BUILD_TYPE := OFFICIAL
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := bootleg_santoni
+PRODUCT_NAME := aosp_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-
-BOOTLEGGERS_BUILD_TYPE := Shishufied
-BOOTLEGGERS_SITDOWN := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
